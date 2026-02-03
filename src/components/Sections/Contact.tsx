@@ -100,15 +100,7 @@ const Contact: React.FC = () => {
                     </ContactItem>
                     <ContactItem>
                         <h3>📍 Location</h3>
-                        <p>
-                            <a 
-                                href="https://maps.app.goo.gl/VKVnt8od7xFM8Z228?g_st=iwb" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                            >
-                                Unit 11A, Bilqees Mall, 11A Walford Rd, Sparkbrook, Birmingham B11 1NP
-                            </a>
-                        </p>
+                        <p>Unit 11A, Bilqees Mall, 11A Walford Rd, Sparkbrook, Birmingham B11 1NP</p>
                     </ContactItem>
                     <ContactItem>
                         <h3>🕒 Hours</h3>
