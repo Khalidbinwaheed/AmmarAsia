@@ -119,7 +119,7 @@ const Collection: React.FC = () => {
                     </CollectionItem>
                 ))}
             </CollectionGrid>
-            <CTA>If you want to see more, please visit the shop</CTA>
+            <CTA>If you would like to explore more of our collection, please visit our shop</CTA>
         </CollectionSection>
     );
 };
