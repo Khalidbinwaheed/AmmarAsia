@@ -509,7 +509,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
                       "paymentAccepted": "Cash, Credit Card",
                       "areaServed": "Birmingham"
                     }
-                `})]}),F.jsx(WC,{}),F.jsx(nw,{}),F.jsx($3,{}),F.jsx(tD,{})]});function RD(){return F.jsx(XA,{children:F.jsx(YC,{children:F.jsx(TA,{children:F.jsx(b1,{path:"/",element:F.jsx(MD,{})})})})})}const DD=nC`
+                `})]}),F.jsx(WC,{}),F.jsx(nw,{}),F.jsx($3,{}),F.jsx(tD,{})]});function RD(){return F.jsx(XA,{basename:"/AmmarAsia",children:F.jsx(YC,{children:F.jsx(TA,{children:F.jsx(b1,{path:"/",element:F.jsx(MD,{})})})})})}const DD=nC`
     * {
         margin: 0;
         padding: 0;
