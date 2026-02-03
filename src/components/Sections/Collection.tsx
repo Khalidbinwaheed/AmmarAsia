@@ -43,16 +43,33 @@ const CollectionGrid = styled.div`
 
 const CollectionItem = styled(motion.div)`
     background: ${({ theme }) => theme.colors.backgroundSecondary};
-    border: 1px solid ${({ theme }) => theme.colors.border};
-    border-radius: 15px;
+    border-radius: 4px;
     overflow: hidden;
     cursor: pointer;
     aspect-ratio: 3/4;
     position: relative;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.2);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
 
     &:hover {
-        border-color: ${({ theme }) => theme.colors.primary};
-        box-shadow: 0 20px 40px rgba(212, 175, 55, 0.3);
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+        
+        &::after {
+            opacity: 1;
+        }
     }
 `;
 
@@ -60,11 +77,11 @@ const CollectionImage = styled.img`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
-    transition: transform 0.3s ease;
+    object-position: top;
+    transition: transform 0.7s ease;
 
     ${CollectionItem}:hover & {
-        transform: scale(1.05);
+        transform: scale(1.08);
     }
 `;
 

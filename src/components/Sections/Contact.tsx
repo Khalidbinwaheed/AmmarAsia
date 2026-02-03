@@ -60,10 +60,26 @@ const ContactItem = styled.div`
         color: ${({ theme }) => theme.colors.primary};
         text-decoration: none;
         transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: ${({ theme }) => theme.colors.primary};
+            transition: width 0.3s ease;
+        }
 
         &:hover {
             color: ${({ theme }) => theme.colors.primaryHover};
-            text-decoration: underline;
+            
+            &::after {
+                width: 100%;
+            }
         }
     }
 `;
@@ -84,7 +100,15 @@ const Contact: React.FC = () => {
                     </ContactItem>
                     <ContactItem>
                         <h3>📍 Location</h3>
-                        <p>Unit 11A, Bilqees Mall, 11A Walford Rd, Sparkbrook, Birmingham B11 1NP</p>
+                        <p>
+                            <a 
+                                href="https://maps.app.goo.gl/VKVnt8od7xFM8Z228?g_st=iwb" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                            >
+                                Unit 11A, Bilqees Mall, 11A Walford Rd, Sparkbrook, Birmingham B11 1NP
+                            </a>
+                        </p>
                     </ContactItem>
                     <ContactItem>
                         <h3>🕒 Hours</h3>

@@ -57,6 +57,7 @@ const Home: React.FC = () => {
                         "latitude": 52.4631,
                         "longitude": -1.8795
                       },
+                      "hasMap": "https://maps.app.goo.gl/VKVnt8od7xFM8Z228?g_st=iwb",
                       "openingHoursSpecification": {
                         "@type": "OpeningHoursSpecification",
                         "dayOfWeek": [

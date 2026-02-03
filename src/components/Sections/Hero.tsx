@@ -55,64 +55,58 @@ const HeroContent = styled.div`
 `;
 
 const Title = styled.h1`
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    background: linear-gradient(135deg, ${({ theme }) => theme.colors.primary}, ${({ theme }) => theme.colors.primaryHover});
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    letter-spacing: 4px;
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    color: ${({ theme }) => theme.colors.primary};
+    text-shadow: 2px 4px 8px rgba(0,0,0,0.5);
+    letter-spacing: 2px;
+    font-weight: 700;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-        font-size: 2.5rem;
-        letter-spacing: 2px;
+        font-size: 3.5rem;
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 `;
 
 const Subtitle = styled.p`
-    font-size: 1.5rem;
-    color: ${({ theme }) => theme.colors.textSecondary};
-    margin-bottom: 2rem;
-    letter-spacing: 2px;
+    font-size: 1.3rem;
+    color: ${({ theme }) => theme.colors.text};
+    margin-bottom: 3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 300;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-        font-size: 1.2rem;
-        padding: 0 1rem;
-    }
-
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 `;
 
 const CTAButton = styled(Link)`
-    background: linear-gradient(135deg, ${({ theme }) => theme.colors.primary}, ${({ theme }) => theme.colors.primaryHover});
-    color: ${({ theme }) => theme.colors.background};
+    background: transparent;
+    color: ${({ theme }) => theme.colors.primary};
     padding: 1rem 3rem;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    letter-spacing: 2px;
+    border: 2px solid ${({ theme }) => theme.colors.primary};
+    font-size: 1rem;
+    letter-spacing: 3px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     text-transform: uppercase;
     display: inline-block;
     text-decoration: none;
+    position: relative;
+    overflow: hidden;
 
     &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 30px rgba(212, 175, 55, 0.5);
+        background: ${({ theme }) => theme.colors.primary};
+        color: ${({ theme }) => theme.colors.background};
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        width: 100%;
-        max-width: 280px;
-        padding: 0.8rem 1.5rem;
+        padding: 0.8rem 2rem;
     }
 `;
 
