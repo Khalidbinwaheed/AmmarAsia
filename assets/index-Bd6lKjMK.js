@@ -389,7 +389,7 @@ Please change the parent <Route path="${M}"> to <Route path="${M==="/"?"*":`${M}
     color: ${({theme:n})=>n.colors.primary};
     letter-spacing: 1px;
     font-style: italic;
-`,u3=()=>{const n=[{src:t3,alt:"Luxury Asian Designer Suit"},{src:e3,alt:"Elegant Pakistani Party Wear"},{src:n3,alt:"Contemporary Luxury Fashion"},{src:i3,alt:"Exclusive Designer Collection"}];return F.jsxs(a3,{id:"collection",children:[F.jsx(r3,{children:"Featured Collection"}),F.jsx(l3,{children:n.map((i,r)=>F.jsx(kb,{whileHover:{y:-10},initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},transition:{duration:.5,delay:r*.1},viewport:{once:!0},children:F.jsx(s3,{src:i.src,alt:i.alt,loading:"lazy"})},r))}),F.jsx(o3,{children:"If you want to see more, please visit the shop"})]})},c3=At.section`
+`,u3=()=>{const n=[{src:t3,alt:"Luxury Asian Designer Suit"},{src:e3,alt:"Elegant Pakistani Party Wear"},{src:n3,alt:"Contemporary Luxury Fashion"},{src:i3,alt:"Exclusive Designer Collection"}];return F.jsxs(a3,{id:"collection",children:[F.jsx(r3,{children:"Featured Collection"}),F.jsx(l3,{children:n.map((i,r)=>F.jsx(kb,{whileHover:{y:-10},initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},transition:{duration:.5,delay:r*.1},viewport:{once:!0},children:F.jsx(s3,{src:i.src,alt:i.alt,loading:"lazy"})},r))}),F.jsx(o3,{children:"If you would like to explore more of our collection, please visit our shop"})]})},c3=At.section`
     padding: 6rem 5%;
     background: ${({theme:n})=>n.colors.backgroundSecondary};
 `,f3=At.h2`
